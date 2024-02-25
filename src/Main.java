@@ -7,19 +7,21 @@ public class Main {
         //Değişkenlerin Kullanıcıdan alınıyor
 
         int a;
-        System.out.println("İnteger(Tam Sayı Örn:1) Bir Değer Giriniz: ");
+        System.out.print("İnteger(Tam Sayı Örn:1) Bir Değer Giriniz: ");
         a = input.nextInt();
 
         double b;
-        System.out.println("Double(Ondalıklı Sayı Örn:1,1) Bir Değer Giriniz: ");
+        System.out.print("Double(Ondalıklı Sayı Örn:1,1) Bir Değer Giriniz: ");
         b = input.nextDouble();
 
         //implicit Casting (Otomatik Dönüşüm)
         double doublea = a;
-        System.out.println(doublea);
+        System.out.print("Integer Değerin Double Değere Dönüşümü: " + doublea);
+
+        System.out.println();
 
         //Explicit Casting (Zorla Dönüştürme)
         int intb = (int) b;
-        System.out.println(intb);
+        System.out.print("Double Değerin Integer Değere Dönüşümü: " + intb);
     }
 }
